@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Management</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Students Management</h1>
+        <p class="subtitle">Manage and view students results</p>
+        <div class="form-box">
+
+            <h2>Add New Student</h2>
+
+            <form id="studentForm">
+                <input type="number" id="studentId" placeholder="Student ID" required>
+                <input type="text" id="studentName" placeholder="Student Name" required>
+                <input type="number" id="grade1" placeholder="Grade 1" min="0" max="100" required>
+                <input type="number" id="grade2" placeholder="Grade 2" min="0" max="100" required>
+                <input type="number" id="grade3" placeholder="Grade 3" min="0" max="100" required>
+                <input type="number" id="attendance" placeholder="Attendance %" min="0" max="100" required>
+                <button type="submit">Add Student</button>
+            </form>
+
+        </div><!-- /form-box -->
+
+        <div class="table-box">
+
+            <h2>Students List</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Average</th>
+                        <th>Grade</th>
+                        <th>Attendance</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentsTable"></tbody>
+
+            </table>
+        </div><!-- /table-box -->
+    </div><!-- /container -->
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
